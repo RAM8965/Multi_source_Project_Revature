@@ -4,7 +4,7 @@ import os
 
 # Dynamically add the project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-from operations.create_schema import connect_db
+from scripts.create_schema import connect_db
 
 def create_product_analysis_mart():
     """Creates the product category analysis data mart (dm_product_category_analysis) in MySQL."""
